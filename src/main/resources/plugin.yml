@@ -1,0 +1,33 @@
+name: PvpPlugin
+main: de.deinname.pvpplugin.PvpPlugin
+version: ${project.version}
+api-version: '1.21'
+description: PvP-Plugin mit Kitroom, Duellen, Party und Kits
+authors: [DeinName]
+
+commands:
+  kitroom:
+    description: Öffnet den Kitroom
+    usage: /kitroom
+  admin-kitman-kitroom:
+    description: Kitroom bearbeiten (nur OP)
+    usage: /admin-kitman-kitroom
+    permission: pvp.admin
+  duel:
+    description: Duelle (herausfordern, annehmen, verwalten)
+    usage: /duel <spieler> | /duel accept <spieler>
+  admin:
+    description: Admin-Befehle (/admin duel)
+    usage: /admin duel
+    permission: pvp.admin
+  party:
+    description: Party-System
+    usage: /party [create|delete|invite|accept|kick|leave]
+  kits:
+    description: Eigene Kits speichern und auswählen
+    usage: /kits <save|delete|select|list> [name]
+
+permissions:
+  pvp.admin:
+    description: Zugriff auf alle Admin-Befehle
+    default: op

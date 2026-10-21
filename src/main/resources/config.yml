@@ -1,0 +1,21 @@
+# PvpPlugin - Einstellungen
+
+match:
+  # Sekunden Countdown vor dem Kampf (Spieler sind eingefroren)
+  countdown-seconds: 3
+  # Sekunden, die die Gewinner nach Kampfende noch in der Arena bleiben
+  end-delay-seconds: 3
+
+duel:
+  # Nach wie vielen Sekunden eine Herausforderung abläuft
+  challenge-timeout-seconds: 60
+
+party:
+  max-size: 8
+  invite-timeout-seconds: 60
+  # false = Leader verlässt Party -> nächster Spieler wird Leader
+  # true  = Leader verlässt Party -> Party wird aufgelöst
+  disband-on-leader-leave: false
+
+kits:
+  max-per-player: 10
